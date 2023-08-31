@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SL Lineup Optimizer</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'College', sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin-top: 2%;
+            margin-bottom: 10%;
+        }
+        
+        form {
+            display: inline-block;
+            text-align: center;
+            max-width: 90%;
+            width: 100%;
+            padding: 4%;
+            background-color: #f0f0f0;
+            border-radius: 1%;
+            margin-bottom: 5%;
+            margin-top: 3%;
+        }
+        
+        input[type="text"] {
+            width: 95%;
+            padding: 2%;
+            margin-bottom: 2%;
+        }
+        
+        button[type="submit"] {
+            padding: 2% 4%;
+            margin-top: 2%;
+            border-width: 1%;
+            border-radius: 2%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+            transition: background-color 0.6s ease, color 0.3s ease;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #333333; 
+            color: beige;
+        }
+
+        select {
+            padding: 2%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+            background-color: #f0f0f0;
+            border: 1px solid black; /* Add border property */
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            width: 100%; 
+            padding: 2%;
+            margin-bottom: 2%;
+            text-align: center; 
+        }
+
+        .back-button {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            padding: 2% 3%;
+            border-radius: 2%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+            background-color: #f0f0f0;
+            border: none;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.6s ease, color 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background-color: #333333;
+            color: beige;
+        }
+        
+        h1 {
+            margin-top: 2%;
+            margin-bottom: 3%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+        }
+
+        h2 {
+            margin-top: 2%;
+            margin-bottom: 3%;
+            font-size: medium;
+            font-family: 'Tahoma', sans-serif;
+        }
+        
+        .result-container ul li {
+            margin-bottom: 5%;
+            font-family: 'College', sans-serif;
+        }
+
+        .result-text {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-family: 'College', sans-serif;
+        }
+
+        .result-number {
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 10px;
+            font-family: 'College', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('main') }}" class="back-button">Back</a>
+        <h1>Stadiumlive WNBA Lineup Optimizer</h1>
+        <h2>Projections up to date for July 11th, 2023</h2>
+
+        <form action="/wnba" method="POST">
+            <input type="text" name="input1" placeholder="Enter team 1 (ex. 'sun','aces','liberty')">
+            <input type="text" name="input2" placeholder="Enter team 2 (ex. 'wings, mystics, sky')">
+            <select name="risklv">
+                <option value="safe">Safe Lineup</option>
+                <option value="risk">Risky Lineup</option>
+            </select>
+            <button type="submit">Calculate</button>
+        </form>
+        {% if result %}
+            <div class="result-container">
+                <ul>
+                    <li>
+                        <span class="result-text">Projected XP:</span>
+                    </li>
+                    <li>
+                        <span class="result-number">{{ result[0] }}</span>
+                    </li>
+                    {% for player in result[1:] %}
+                        <li>{{ player }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>

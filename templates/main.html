@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SL Lineup Optimizer</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: 'College', sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: 10%;
+        }
+        
+        h1 {
+            margin-top: 0;
+            margin-bottom: 3%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            border: 20px solid #BF0000; /* Add border properties */
+            padding: 10px; /* Add padding to create space between the text and the border */
+            background-color: #BF0000; /* Add background-color */
+            color: white;
+            text-shadow: -2px -2px 0 #800000, 2px -2px 0 #800000, -2px 2px 0 #800000, 2px 2px 0 #800000;
+            border-radius: 10px;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
+        }
+
+        .button {
+            display: inline-block;
+            width: 120px; /* Set a fixed width for the buttons */
+            height: 120px;
+            padding: 20px;
+            border-radius: 5%;
+            font-family: 'Tahoma', sans-serif;
+            font-weight: bolder;
+            font-size: 25px;
+            background-color: #f0f0f0;
+            border: none;
+            text-decoration: none;
+            color: white;
+            text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+            transition: background-color 0.5s ease, color 0.5s ease;
+            cursor: pointer;
+            margin-right: 5%; /* Add margin between the buttons */
+        }
+
+        .button-nba {
+            background-color: #0054A4;
+        }
+        
+        .button-wnba {
+            background-color: #EA5101;
+        }
+        
+        .button:hover {
+            background-color: #333333;
+            color: white;
+        }
+
+        .spacer-button {
+            flex: 1;
+            width: 100px; /* Set a fixed width for the buttons */
+            height: 120px;
+            background-color: transparent;
+            border: none;
+            cursor: default;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stadiumlive Lineup Optimizers</h1>
+        <div class="button-container">
+            <a href="{{ url_for('nba') }}"><button class="button button-nba">NBA</button></a>
+            <button class="spacer-button"></button>
+            <a href="{{ url_for('wnba') }}"><button class="button button-wnba">WNBA</button></a>
+        </div>
+    </div>
+</body>
+</html>
