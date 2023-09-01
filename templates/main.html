@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SL Lineup Optimizer</title>
-    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  <title>SL Lineup Optimizer</title>
+   <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
-<body class="main_body">
-    <div class="main-container">
-        <h1 class="main-title">Stadiumlive Lineup Optimizers</h1>
-        <div class="main-buttons-container">
-            <a href="{{ url_for('nba') }}"><button class="button button-nba">NBA</button></a>
-            <button class="spacer-button"></button>
-            <a href="{{ url_for('wnba') }}"><button class="button button-wnba">WNBA</button></a>
-        </div>
-    </div>
+
+
+<body>
+  <div class="main_heading_container">
+    <h1 class="main-heading">
+      Stadium Live Lineup Optimizer
+    </h1>
+  </div>
+
+  <div class="main_buttons_container">
+      <a class= "main-buttons" href="{{ url_for('nba')}}">
+        <img src="/static/nba.png" alt="Image Button" width="200" height="400">
+      </a>
+      <a class= "main-buttons" href="{{ url_for('wnba')}}">
+        <img src="/static/wnba.png" alt="Image Button" width="180" height="400">
+      </a>
+  </div>
+
 </body>
+
+
 </html>

@@ -1,84 +1,49 @@
 /* main */
 
-.main_body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    font-family: 'College', sans-serif;
+body {
+    font-family: 'Tahoma', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFC03;
 }
 
-.main-container {
+.main_heading_container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 10%;
 }
 
-.main-title {
-    margin-top: 0;
+.main-heading {
     margin-bottom: 3%;
-    font-family: 'Tahoma', sans-serif;
     font-weight: bolder;
     font-style: italic;
-    border: 20px solid #BF0000; 
+    border: 20px solid #F32C40; 
     padding: 10px; 
-    background-color: #BF0000; 
+    background-color: #F32C40; 
     color: white;
     text-shadow: -2px -2px 0 #800000, 2px -2px 0 #800000, -2px 2px 0 #800000, 2px 2px 0 #800000;
     border-radius: 10px;
 }
 
-.main-buttons-container {
+.main_buttons_container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 10%;
 }
 
-.button {
-    display: inline-block;
-    width: 120px; 
-    height: 120px;
-    padding: 20px;
-    border-radius: 5%;
-    font-family: 'Tahoma', sans-serif;
-    font-weight: bolder;
-    font-size: 25px;
-    background-color: #f0f0f0;
-    border: none;
-    text-decoration: none;
+.main-buttons {
+    padding: 50px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.main-buttons:hover {
     color: white;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    transition: background-color 0.5s ease, color 0.5s ease;
-    cursor: pointer;
-    margin-right: 5%; 
+    transform: scale(1.2);
+    filter: brightness(0.8);
 }
 
-.button-nba {
-    background-color: #0054A4;
-}
 
-.button-wnba {
-    background-color: #EA5101;
-}
 
-.button:hover {
-    background-color: #333333;
-    color: white;
-}
-
-.spacer-button {
-    flex: 1;
-    width: 100px; 
-    height: 120px;
-    background-color: transparent;
-    border: none;
-    cursor: default;
-  }
-
-/* nba page */
+/* nba / wnba page */
 
 .optimizer-body {
     display: flex;
