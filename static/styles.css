@@ -1,10 +1,12 @@
 /* main */
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@700&family=Russo+One&family=Tektur:wght@600&display=swap');
+
 body {
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Russo One', sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: #FFFC03;
+    background-color: #29063C;
 }
 
 .main_heading_container {
@@ -17,11 +19,10 @@ body {
     margin-bottom: 3%;
     font-weight: bolder;
     font-style: italic;
-    border: 20px solid #F32C40; 
+    border: 10px solid #9003F3; 
     padding: 10px; 
-    background-color: #F32C40; 
+    background-color: #9003F3; 
     color: white;
-    text-shadow: -2px -2px 0 #800000, 2px -2px 0 #800000, -2px 2px 0 #800000, 2px 2px 0 #800000;
     border-radius: 10px;
 }
 
@@ -45,14 +46,47 @@ body {
 
 /* nba / wnba page */
 
-.optimizer-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'College', sans-serif;
+.back_button_container {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    padding: 2% 3%;
+    border-radius: 10%;
+    font-weight: bolder;
+    background-color: #9003F3;
+    border: none;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.6s ease, color 0.3s ease;
 }
+
+.optimizer_form_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.form {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 400px;
+
+    padding: 4%;
+    background-color: #9003F3;
+    border-radius: 1%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+
+
+
+
+
+
+
+
 
 .optimizer-container {
     display: flex;
@@ -99,7 +133,7 @@ button[type="submit"]:hover {
 
 .optimizer-risklv {
     padding: 2%;
-    font-family: 'Tahoma', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: bolder;
     background-color: #f0f0f0;
     border: 1px solid black; 

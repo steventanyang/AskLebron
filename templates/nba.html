@@ -4,7 +4,7 @@
     <title>SL Lineup Optimizer</title>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
-<body class="optimizer-body">
+<!-- <body class="optimizer-body">
     <div class="optimizer-container">
         <a href="{{ url_for('main') }}" class="back-button">Back</a>
         <h1 class="optimizer-title">Stadiumlive NBA Lineup Optimizer</h1>
@@ -34,6 +34,33 @@
             </div>
         {% endif %}
     </div>
+</body> -->
+
+<body>
+    <div class="back_button_container">
+      <a href="{{ url_for('main') }}">Back</a>
+    </div>
+
+    <div class="main_heading_container" style="margin-top: 5%;">
+        <h1 class="main-heading">
+          NBA LINEUP OPTIMIZER
+        </h1>
+    </div>
+    <div class="optimizer_form_container">
+      <form class="form" action="/nba" method="POST">
+
+
+
+        <input type="text" name="input1" placeholder="Enter team 1 (ex. 'hawks' '76ers' 'nuggets')">
+        <input type="text" name="input2" placeholder="Enter team 2 (ex. 'heat, 'spurs', 'rockets')">
+        <select class="optimizer-risklv" name="risklv">
+            <option value="safe">Safe Lineup</option>
+            <option value="risk">Risky Lineup</option>
+        </select>
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
 </body>
+
 </html>
 
