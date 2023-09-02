@@ -50,4 +50,4 @@ def wnba():
     return render_template('wnba.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=8000, debug=True)

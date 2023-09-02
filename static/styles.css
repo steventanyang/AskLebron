@@ -50,14 +50,33 @@ body {
     position: absolute;
     top: 2%;
     left: 2%;
-    padding: 2% 3%;
-    border-radius: 10%;
+    border-radius: 15%;
     font-weight: bolder;
+    font-style: italic;
     background-color: #9003F3;
     border: none;
     text-decoration: none;
     color: white;
+    font-size: 30px;
+    padding: 12px 24px;
+    width: 10%;
+    height: 100px;
+    cursor: pointer;
     transition: background-color 0.6s ease, color 0.3s ease;
+}
+
+.back_button_text {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.back_button_container:hover {
+    background-color: #333333;
 }
 
 .optimizer_form_container {
