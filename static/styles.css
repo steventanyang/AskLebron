@@ -48,25 +48,25 @@ body {
 
 .back_button_container {
     position: absolute;
-    top: 2%;
+    top: 3%;
     left: 2%;
-    border-radius: 15%;
-    font-weight: bolder;
-    font-style: italic;
+    border-radius: 10px;
     background-color: #9003F3;
     border: none;
     text-decoration: none;
     color: white;
     font-size: 30px;
-    padding: 12px 24px;
-    width: 10%;
-    height: 100px;
+    width: 8%;
+    height: 75px;
     cursor: pointer;
     transition: background-color 0.6s ease, color 0.3s ease;
 }
 
 .back_button_text {
-    display: flex; 
+    display: flex;
+    font-family: 'Russo One', sans-serif; 
+    font-weight: bolder;
+    font-style: italic;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
@@ -82,19 +82,18 @@ body {
 .optimizer_form_container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin: 0;
 }
 
 .form {
     display: inline-block;
     text-align: center;
     width: 50%;
-    height: 400px;
+    height: 300px;
 
     padding: 4%;
     background-color: #9003F3;
     border-radius: 1%;
-    margin-bottom: 5%;
     margin-top: 3%;
 }
 
