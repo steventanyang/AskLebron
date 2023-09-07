@@ -51,9 +51,12 @@
     </div>
     <div class="optimizer_form_container">
       <form class="form" action="/nba" method="POST">
-        <input type="text" name="input1" placeholder="Enter team 1 (ex. 'hawks' '76ers' 'nuggets')">
-        <input type="text" name="input2" placeholder="Enter team 2 (ex. 'heat, 'spurs', 'rockets')">
+        <div class="form-input-container">
+          <input class="form-input" type="text" name="input1" placeholder="Enter team 1 (ex. 'hawks' '76ers' 'nuggets')">
+          <input class="form-input" type="text" name="input2" placeholder="Enter team 2 (ex. 'heat, 'spurs', 'rockets')">
+        </div>
         <select class="optimizer-risklv" name="risklv">
+          <option value="" disabled selected>Risk Level</option>
           <option value="safe">Safe Lineup</option>
           <option value="risk">Risky Lineup</option>
         </select>
