@@ -4,37 +4,6 @@
     <title>SL Lineup Optimizer</title>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
-<!-- <body class="optimizer-body">
-    <div class="optimizer-container">
-        <a href="{{ url_for('main') }}" class="back-button">Back</a>
-        <h1 class="optimizer-title">Stadiumlive NBA Lineup Optimizer</h1>
-
-        <form class="optimizer-form" action="/nba" method="POST">
-            <input type="text" name="input1" placeholder="Enter team 1 (ex. 'hawks' '76ers' 'nuggets')">
-            <input type="text" name="input2" placeholder="Enter team 2 (ex. 'heat, 'spurs', 'rockets')">
-            <select class="optimizer-risklv" name="risklv">
-                <option value="safe">Safe Lineup</option>
-                <option value="risk">Risky Lineup</option>
-            </select>
-            <button type="submit">Calculate</button>
-        </form>
-        {% if result %}
-            <div class="result-container">
-                <ul>
-                    <li>
-                        <span class="result-text">Projected XP:</span>
-                    </li>
-                    <li>
-                        <span class="result-number">{{ result[0] }}</span>
-                    </li>
-                    {% for player in result[1:] %}
-                        <li>{{ player }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        {% endif %}
-    </div>
-</body> -->
 
 <body>
     <button class="back_button_container">
