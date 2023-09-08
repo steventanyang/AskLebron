@@ -4,7 +4,7 @@
     <title>SL Lineup Optimizer</title>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
-<body class="optimizer-body">
+<!-- <body class="optimizer-body">
     <div class="optimizer-container">
         <a href="{{ url_for('main') }}" class="back-button">Back</a>
         <h1 class="optimizer-title">Stadiumlive WNBA Lineup Optimizer</h1>
@@ -34,10 +34,9 @@
             </div>
         {% endif %}
     </div>
-</body>
+</body> -->
 
-<!-- <body>
-
+<body>
     <button class="back_button_container">
         <a class="back_button_text" href="{{ url_for('main')}}">
             <span>BACK</span>
@@ -51,16 +50,32 @@
     </div>
     <div class="optimizer_form_container">
       <form class="form" action="/wnba" method="POST">
-        <input type="text" name="input1" placeholder="Enter team 1 (ex. 'sun','aces','liberty')">
-        <input type="text" name="input2" placeholder="Enter team 2 (ex. 'wings, mystics, sky')">
+        <div class="form-input-container">
+            <input type="text" name="input1" placeholder="Enter team 1 (ex. 'sun','aces','liberty')">
+            <input type="text" name="input2" placeholder="Enter team 2 (ex. 'wings, mystics, sky')">
+        </div>
         <select class="optimizer-risklv" name="risklv">
-            <option value="safe">Safe Lineup</option>
-            <option value="risk">Risky Lineup</option>
+          <option value="safe">Safe Lineup</option>
+          <option value="risk">Risky Lineup</option>
         </select>
         <button type="submit">Calculate</button>
       </form>
     </div>
-</body> -->
+    {% if result %}
+    <div class="players_container">
+        <ul class="horizontal-list">
+            {% for player in result[1:] %}
+                <li class="player-list">{{ player }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="xp-container">
+        <li>
+            <span class="xp-text">Projected XP: {{ result[0] }}</span>
+        </li>
+    </div>
+    {% endif %}
+</body>
 
 
 </html>

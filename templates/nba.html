@@ -37,7 +37,6 @@
 </body> -->
 
 <body>
-
     <button class="back_button_container">
         <a class="back_button_text" href="{{ url_for('main')}}">
             <span>BACK</span>
@@ -56,28 +55,26 @@
           <input class="form-input" type="text" name="input2" placeholder="Enter team 2 (ex. 'heat, 'spurs', 'rockets')">
         </div>
         <select class="optimizer-risklv" name="risklv">
-          <option value="" disabled selected>Risk Level</option>
           <option value="safe">Safe Lineup</option>
           <option value="risk">Risky Lineup</option>
         </select>
         <button type="submit">Calculate</button>
       </form>
-      {% if result %}
-      <div class="result-container">
-          <ul>
-              <li>
-                  <span class="result-text">Projected XP:</span>
-              </li>
-              <li>
-                  <span class="result-number">{{ result[0] }}</span>
-              </li>
-              {% for player in result[1:] %}
-                  <li>{{ player }}</li>
-              {% endfor %}
-          </ul>
-      </div>
-      {% endif %}
     </div>
+    {% if result %}
+    <div class="players_container">
+        <ul class="horizontal-list">
+            {% for player in result[1:] %}
+                <li class="player-list">{{ player }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="xp-container">
+        <li>
+            <span class="xp-text">Projected XP: {{ result[0] }}</span>
+        </li>
+    </div>
+    {% endif %}
 </body>
 
 </html>
