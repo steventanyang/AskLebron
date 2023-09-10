@@ -139,16 +139,16 @@ def optimizer(league, team1, team2, risklv):
     if league == 'nba' : 
         df = pd.read_csv('rotowire-nba-projections.csv')
         df = df.drop(columns = ['Unnamed: 1','Unnamed: 2','Unnamed: 3','Field Goals','Unnamed: 12','Unnamed: 13','Unnamed: 15','Unnamed: 16','Free Throws','Unnamed: 18','Unnamed: 19','More Stats','Unnamed: 21'])
-        df.to_csv('nbadone')
+        df.to_csv('txt/nbadone')
     
     if league == 'wnba' :
         df = pd.read_csv('wnba-daily-projections.csv')
         df = df.drop(columns = ['Unnamed: 1','Unnamed: 2','Unnamed: 10','Unnamed: 11','Additional Stats','Unnamed: 14','Unnamed: 15','Unnamed: 16','Unnamed: 17','Unnamed: 18','Unnamed: 19','Unnamed: 20'])
-        df.to_csv('wnbadone')
+        df.to_csv('txt/wnbadone')
     
     pr = 'txt/bballprojections.txt'
     cv = 'txt/bballcoinvalues.txt'
-    nd = f'{league}done'
+    nd = f'txt/{league}done'
 
     with open(pr, 'w') as file:
         file.truncate()
