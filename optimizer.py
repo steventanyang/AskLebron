@@ -2,19 +2,19 @@ import itertools
 import pandas as pd
 
 #step 1: write names of players taken from user input of teams
-def chooseteams(league, team1, team2, projectionsfile, coinvaluesfile) :
+def chooseteams(league, team1, team2, projections_file, coinvalues_file) :
     team1_file = f'leagues/{league}/{team1}'
     team2_file = f'leagues/{league}/{team2}'
-    with open(team1_file , 'r') as first , open(projectionsfile , 'a') as second , open(coinvaluesfile , 'a') as third :
+    with open(team1_file , 'r') as first , open(projections_file , 'a') as second , open(coinvalues_file , 'a') as third :
         for line in first : 
             second.write(line) and third.write(line)
-    with open(team2_file , 'r') as first , open(projectionsfile , 'a') as second , open(coinvaluesfile , 'a') as third :
+    with open(team2_file , 'r') as first , open(projections_file , 'a') as second , open(coinvalues_file , 'a') as third :
         for line in first : 
             second.write(line) and third.write(line)
             
 all = dict()
 
-#step 2:creating a dictionary that has player: projected xp, coin
+#step 2:creating a dict in this format: "player: projected xp, coin"
 def processdata(league, file1, file2, file3, risklv) :
     game = open(file1)
     for line in game :
@@ -128,10 +128,6 @@ def combine(number) :
             bestvalue = bigxp 
             bestcomb = comb
             vl[bestcomb] = bestvalue
-
-
-
-
 
 
 def optimizer(league, team1, team2, risklv):
