@@ -3,7 +3,7 @@
 
 [Stadium Live App](https://stadiumverse.com/) is an immersive digital playground where sports fans form communities and compete in daily fantasy matches. With over 500,000 users, Stadium Live is one of the fastest growing online hubs that revolves around sports and culture. 
 
-![main](images/choose_team.png)
+![main](images/sl.png)
 
 ## Overview
 The fantasy-aspect of Stadium Live challenges players to create winning 8-player lineup combinations, earning valuable rewards such as xp, coins, and collectible items. AskLebron is a powerful tool designed to revolutionize lineup creation within Stadium Live.
