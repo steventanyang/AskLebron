@@ -3,7 +3,7 @@
 
 [Stadium Live App](https://stadiumverse.com/) is an immersive digital playground where sports fans form communities and compete in daily fantasy matches. With over 500,000 users, Stadium Live is one of the fastest growing online hubs that revolves around sports and culture. 
 
-![Alt Text](https://imgur.com/a/BsXVHQt = 300x200)
+![main](images/choose_team.png)
 
 ## Overview
 The fantasy-aspect of Stadium Live challenges players to create winning 8-player lineup combinations, earning valuable rewards such as xp, coins, and collectible items. AskLebron is a powerful tool designed to revolutionize lineup creation within Stadium Live.
@@ -43,34 +43,33 @@ The fantasy-aspect of Stadium Live challenges players to create winning 8-player
 
 ### 1. Download Rotowire Projection Data
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 ### 2. Replace Projection Data Files
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 ### 3. Choose a league
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 ### 4. Enter team nanes
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 ### 5. Select Risk Level
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 ### 6. Optimize
 
-![Alt Text](https://imgur.com/IAsef9o = 300x200)
+![main](images/choose_team.png)
 
 
 ## Roadmap
-> [x] add wnba
-> [x] update ui
-> [x] add risk level algorithm
-> [ ] 
-> [ ] This is an incomplete task
-> [x] This is a complete task
-> [ ] This is an incomplete task
+[x] add wnba
+[x] update ui
+[x] add risk level algorithm
+[ ] add nfl
+[ ] rotowire api fetching
+[ ] display player headshots
