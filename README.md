@@ -1,4 +1,4 @@
-# AskLebron 
+#                   AskLebron 
 ### A Daily Fantasy Lineup Optimizer
 
 [Stadium Live App](https://stadiumverse.com/) is an immersive digital playground where sports fans form communities and compete in daily fantasy matches. With over 500,000 users, Stadium Live is one of the fastest growing online hubs that revolves around sports and culture. 
@@ -41,7 +41,10 @@ The fantasy-aspect of Stadium Live challenges players to create winning 8-player
 
 ## Usage
 
-### 1. Download Rotowire Projection Data
+### 1. Download Rotowire Projection Data (CSV file) 
+(Select "Daily" under projection type)
+NBA: https://www.rotowire.com/basketball/projections.php?type=daily
+WNBA: https://www.rotowire.com/wnba/projections-daily.php
 
 ![main](images/choose_team.png)
 
