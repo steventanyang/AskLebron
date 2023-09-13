@@ -46,11 +46,11 @@ The fantasy-aspect of Stadium Live challenges players to create winning 8-player
 NBA: https://www.rotowire.com/basketball/projections.php?type=daily
 WNBA: https://www.rotowire.com/wnba/projections-daily.php
 
-![main](images/choose_team.png)
+![main](images/csv.png)
 
 ### 2. Replace Projection Data Files
 
-![main](images/choose_team.png)
+![main](images/csv_paste.png)
 
 ### 3. Choose a league
 
@@ -58,15 +58,15 @@ WNBA: https://www.rotowire.com/wnba/projections-daily.php
 
 ### 4. Enter team nanes
 
-![main](images/choose_team.png)
+![main](images/enter_team.png)
 
 ### 5. Select Risk Level
 
-![main](images/choose_team.png)
+![main](images/risk_level.png)
 
 ### 6. Optimize
 
-![main](images/choose_team.png)
+![main](images/calculate.png)
 
 
 ## Roadmap
